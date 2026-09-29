@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2: CSS3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header-main">
+        <h1>Tarea 2: CSS3 </h1>
+        <p><strong>Estudiante:</strong> Joselyn Vargas Pérez | 
+        <strong>Curso:</strong> ISW-512 Diseño de Aplicaciones Web</p>
+    </header>
+    
+    <main class="container">
+
+        <!-- 2.1 MODELO DE CAJA (BOX MODEL)-->
+        <section class="card">
+            <h2>2.1 Modelo de Caja (Box Model) & Bloque vs En línea</h2>
+            
+            <div class="box-model">
+                <p>Este contenedor demuestra <code>margin</code> (exterior), 
+                <code>border</code> (borde), <code>padding</code> (relleno) y 
+                <code>content</code> (contenido).</p>
+            </div>
+
+            <h3>Diferencia entre Elementos Inline y Block</h3>
+            <div class="inline-block">
+                <div class="block-elem">Elemento  
+                (Display: Block) - Ocupa todo el ancho.</div>
+                <span class="inline-elem">Elemento 
+                (Display: Inline) - Solo el ancho de su contenido.</span>
+                <br>
+                <span class="inline-block-elem">Elemento 
+                (Display: Inline-Block) - Fluye en línea pero acepta ancho y alto.</span>
+            </div>
+        </section>
+
+        <!-- 2.2 POSICIONAMIENTO, FLOAT, OVERFLOW, VISIBILITY & Z-INDEX -->
+        <section class="card">
+            <h2>2.2 Posicionamiento, Float, Overflow, Visibility & Z-Index</h2>
+
+            <!-- Position -->
+            <h3>Position (Static, Relative, Absolute, Fixed)</h3>
+            <div class="pos-container">
+                <div class="pos-box static-box">Static (Por defecto)</div>
+                <div class="pos-box relative-box">Relative (Desplazado)</div>
+                <div class="pos-box absolute-box">Absolute (Contenedor relativo)</div>
+            </div>
+            <div class="fixed-box">Fixed (Fijo en pantalla)</div>
+
+            <!-- Float y Clear -->
+            <h3>Float y Clear</h3>
+            <div class="float-container clearfix">
+                <div class="float-left">Flotante Izquierda (Float: left)</div>
+                <div class="float-right">Flotante Derecha (Float: right)</div>
+                <p class="clear-both">Texto con 
+                <code>clear: both</code> para romper la flotación previa.</p>
+            </div>
+
+            <!-- Overflow -->
+            <h3>Overflow (Visible, Hidden, Scroll, Auto)</h3>
+            <div class="overflow-grid">
+                <div class="overflow-box of-visible">
+                    <strong>Visible:</strong> Texto largo que sobresale del límite marcado en la caja.
+                </div>
+                <div class="overflow-box of-hidden">
+                    <strong>Hidden:</strong> Texto largo recortado automáticamente fuera del área.
+                </div>
+                <div class="overflow-box of-scroll">
+                    <strong>Scroll:</strong> Muestra barras siempre activas para navegar.
+                </div>
+                <div class="overflow-box of-auto">
+                    <strong>Auto:</strong> Agrega barra solo cuando el contenido excede la altura.
+                </div>
+            </div>
+
+            <!-- Visibility -->
+            <h3>Visibility (Visible vs Hidden vs Display: None)</h3>
+            <div class="visibility-demo">
+                <div class="vis-box">Caja 1</div>
+                <div class="vis-box hidden-box">Caja 2 (Visibility: Hidden - Conserva espacio)</div>
+                <div class="vis-box none-box">Caja 3 (Display: None - Remueve espacio)</div>
+                <div class="vis-box">Caja 4</div>
+            </div>
+
+            <!-- Z-Index -->
+            <h3>Z-Index (Capas de Apilamiento)</h3>
+            <div class="zindex-container">
+                <div class="z-box z1">Capa Z-Index: 1</div>
+                <div class="z-box z3">Capa Z-Index: 3</div>
+                <div class="z-box z2">Capa Z-Index: 2</div>
+            </div>
+        </section>
+
+        <!-- 2.3 FLEXBOX EN CSS3 -->
+        <section class="card">
+            <h2>2.3 Flexbox en CSS3</h2>
+
+            <h3>Flex Container & Propiedades de Alineación</h3>
+            <div class="flex-container">
+                <div class="flex-item item-1">Item 1 (order: 2, flex-grow: 1)</div>
+                <div class="flex-item item-2">Item 2 (order: 1, align-self: flex-start)</div>
+                <div class="flex-item item-3">Item 3 (order: 3, flex-grow: 2)</div>
+            </div>
+
+            <h3>Flex Wrap & Justify Content</h3>
+            <div class="flex-container-wrap">
+                <div class="flex-card">Tarjetas Flex 1</div>
+                <div class="flex-card">Tarjetas Flex 2</div>
+                <div class="flex-card">Tarjetas Flex 3</div>
+                <div class="flex-card">Tarjetas Flex 4</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
